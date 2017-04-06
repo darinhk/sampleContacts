@@ -59,9 +59,6 @@ public class ListViewFragment extends Fragment implements AdapterView.OnItemClic
         {
             String name=contacts.getString(contacts.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME));
             String phoneNumber = contacts.getString(contacts.getColumnIndex(ContactsContract.CommonDataKinds.Phone.NUMBER));
-
-            Log.d("name", name);
-            Log.d("phone", phoneNumber);
         }
         contacts.close();
     }
